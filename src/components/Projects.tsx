@@ -9,7 +9,7 @@ const Projects = () => {
       tech: ["React.js", "Puter.js", "Tailwind CSS", "Claude API"],
       github: "https://github.com/Devang-10/AI-Resume-Analyzer",
       demo: "https://ai-resume-analyzer-kappa-two.vercel.app/",
-      image: "/src/project_images/Resumind.png",
+      image: "/Resumind.png",
       gradient: "from-blue-500 to-purple-600",
     },
     {
@@ -19,7 +19,7 @@ const Projects = () => {
       tech: ["React.js", "Node.js", "Tailwind CSS", "Gemini API"],
       github: "https://github.com/Devang-10/ai-code-reviewer",
       demo: "https://ai-code-reviewer-1-tudw.onrender.com/",
-      image: "/src/project_images/Ai-code.png",
+      image: "/Ai-code.png",
       gradient: "from-green-500 to-teal-600",
     },
     {
@@ -29,7 +29,7 @@ const Projects = () => {
       tech: ["React.js", "Tailwind CSS", "REST API"],
       github: "https://github.com/Devang-10/RESTExplorer",
       demo: "https://rest-explorer-lime.vercel.app/",
-      image: "/src/project_images/RESTExplorer.png",
+      image: "/RESTExplorer.png",
       gradient: "from-orange-500 to-red-600",
     },
   ];

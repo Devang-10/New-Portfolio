@@ -93,7 +93,7 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full opacity-50 bg-gradient-to-r from-yellow-400 to-pink-400 blur-2xl animate-pulse"></div>
               <div className="relative w-64 h-64 overflow-hidden border-4 border-white rounded-full shadow-2xl md:w-80 md:h-80">
                 <img
-                  src="/src/project_images/Photo.jpg"
+                  src="/Photo.jpg"
                   alt="Profile"
                   className="object-cover w-full h-full"
                 />
