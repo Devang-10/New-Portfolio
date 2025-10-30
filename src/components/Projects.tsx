@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Sparkles } from 'lucide-react';
+import { ExternalLink, Github, Sparkles } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -9,7 +9,7 @@ const Projects = () => {
       tech: ["React.js", "Puter.js", "Tailwind CSS", "Claude API"],
       github: "https://github.com/Devang-10/AI-Resume-Analyzer",
       demo: "https://ai-resume-analyzer-kappa-two.vercel.app/",
-      image: "src/project_images/Resumind.png",
+      image: "/src/project_images/Resumind.png",
       gradient: "from-blue-500 to-purple-600",
     },
     {
@@ -19,7 +19,7 @@ const Projects = () => {
       tech: ["React.js", "Node.js", "Tailwind CSS", "Gemini API"],
       github: "https://github.com/Devang-10/ai-code-reviewer",
       demo: "https://ai-code-reviewer-1-tudw.onrender.com/",
-      image: "src/project_images/Ai-code.png",
+      image: "/src/project_images/Ai-code.png",
       gradient: "from-green-500 to-teal-600",
     },
     {
@@ -29,21 +29,28 @@ const Projects = () => {
       tech: ["React.js", "Tailwind CSS", "REST API"],
       github: "https://github.com/Devang-10/RESTExplorer",
       demo: "https://rest-explorer-lime.vercel.app/",
-      image: "src/project_images/RESTExplorer.png",
+      image: "/src/project_images/RESTExplorer.png",
       gradient: "from-orange-500 to-red-600",
     },
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section
+      id="projects"
+      className="py-20 bg-gradient-to-b from-white to-gray-50"
+    >
       <div className="container px-6 mx-auto">
         <div className="mb-16 text-center animate-fade-in-up">
           <h2 className="mb-4 text-4xl font-bold text-gray-800 md:text-5xl">
-            Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Projects</span>
+            Featured{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              Projects
+            </span>
           </h2>
           <div className="w-24 h-1 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600"></div>
           <p className="max-w-2xl mx-auto mt-4 text-gray-600">
-            Showcasing my best work in AI-powered applications and full-stack development
+            Showcasing my best work in AI-powered applications and full-stack
+            development
           </p>
         </div>
 
@@ -55,7 +62,9 @@ const Projects = () => {
               style={{ animationDelay: `${idx * 100}ms` }}
             >
               <div className="relative h-48 overflow-hidden">
-                <div className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-20`}></div>
+                <div
+                  className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-20`}
+                ></div>
                 <img
                   src={project.image}
                   alt={project.title}
@@ -85,7 +94,9 @@ const Projects = () => {
 
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className={`p-2 bg-gradient-to-r ${project.gradient} rounded-lg text-white`}>
+                  <div
+                    className={`p-2 bg-gradient-to-r ${project.gradient} rounded-lg text-white`}
+                  >
                     <Sparkles className="w-5 h-5" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-800 transition-all group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600">
@@ -96,7 +107,6 @@ const Projects = () => {
                 <p className="mb-4 text-sm leading-relaxed text-gray-700">
                   {project.description}
                 </p>
-
 
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, techIdx) => (
